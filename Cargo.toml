@@ -1,0 +1,22 @@
+[package]
+name = "tinysrv"
+authors = ["Dean Little <@deanmlittle>"]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "tinysrv"
+
+[dependencies]
+libc = { version = "0.2", default-features = false }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+opt-level = "z"
+lto = true
+strip = true
+codegen-units = 1
+panic = "abort"
