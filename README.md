@@ -1,6 +1,6 @@
 # tinysrv
 
-a fast, tiny `no_std` http server/library. ~50KB binary size. zero heap allocations.
+a fast, tiny `no_std` http server/library. ~50kb binary size. zero heap allocations.
 
 ### usage
 
